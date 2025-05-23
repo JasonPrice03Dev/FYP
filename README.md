@@ -1,57 +1,66 @@
-**StudentSignIn - Final Year Project Documentation**
+# 🎓 StudentSignIn – Final Year Project Documentation
 
-**Project Overview**
+An Android attendance-tracking app that uses QR codes and facial recognition to streamline student sign-ins and provide real-time attendance data to lecturers.
 
-StudentSignIn is an attendance-taking application that uses QR codes and facial recognition to automate the student sign-in process for classes. The system allows students to log in, select their courses, scan a QR code provided by the lecturer, undergo facial recognition, and mark their attendance. Lecturers can view attendance statistics for their classes in real time. This system streamlines attendance management and improves the accuracy of tracking student presence.
+---
 
-**Technologies Used**
+## 📌 Overview
 
-Android (using Kotlin)
+**StudentSignIn** is a mobile application designed to automate classroom attendance using QR code validation and facial recognition. Students scan a QR code presented by a lecturer and verify their identity using facial recognition to mark attendance securely and reliably. Lecturers can monitor and track attendance stats in real time via a dashboard.
 
-Jetpack Compose for UI
+---
 
-Firebase for backend services
+## 🛠️ Technologies Used
 
-Google ML Kit for facial recognition
+### 📱 Frontend:
+- **Android (Kotlin)**
+- **Jetpack Compose** – UI
+- **Zxing** – QR code scanner
+- **Google ML Kit** – Facial recognition
 
-Zxing for QR Code generation
+### ☁️ Backend:
+- **Firebase Firestore** – Realtime database
+- **Firebase Authentication** – User management
 
-**Backend:**
+### 🧰 Development Tools:
+- **Android Studio**
+- **GitHub**
 
-Firebase Firestore for real-time database
+---
 
-Firebase Authentication for user management
+## 🚀 Features
 
-**Development Tools:**
+- 🔐 **Secure Student & Lecturer Login**
+- 🎓 **Course-Based Timetable Display**
+- 📷 **QR Code Scanning + Facial Recognition**
+- ✅ **Automated Attendance Recording**
+- 📊 **Lecturer Dashboard with Real-Time Stats**
+- 🔒 **QR Code Expiry to Prevent Screenshot Reuse**
 
-Android Studio
+---
 
-**Features**
+## 📲 App Flow
 
-Student Login: Students can sign in using their email and password, with access restricted to students and lecturers.
+1. **Login Page** – Students/lecturers authenticate using email/password.
+2. **Hub Page** – Students see class timetables based on selected course.
+3. **QR Code Scanner** – Scan the code provided by the lecturer for the current session.
+4. **Facial Recognition** – Camera verifies student identity.
+5. **Attendance Confirmation** – Attendance is automatically marked and stored.
 
-Course Selection: After logging in, students select their course (e.g., ISD) to view the corresponding timetable.
+---
 
-QR Code Scanning: Students scan a QR code provided by the lecturer for a specific class session. This validates the QR code’s authenticity and timing.
+## 📁 Repository Contents
 
-Facial Recognition: After scanning the QR code, students undergo facial recognition to confirm their identity.
+This repository contains the **final documentation and presentation materials** for the StudentSignIn app, including:
+- 📄 Final Year Project Report (Word)
+- 🖼️ Presentation Poster (PowerPoint)
 
-Attendance Marking: Once a student's face is recognized, attendance is automatically marked for that class session.
+> *The source code for this project is hosted separately at [https://github.com/JasonPrice03Dev/StudentSignIn](#).*
 
-Lecturer's Dashboard: Lecturers can view real-time attendance reports for their classes and generate statistics.
+---
 
-**App Flow**
+## 👨‍💻 Author
 
-Login Page: Students and lecturers log in using their credentials.
-
-Hub Page: After login, students see their timetable based on their course.
-
-QR Code Scanner: Students scan the QR code provided by the lecturer for that day's class.
-
-Facial Recognition: The app captures the student's face for identity verification.
-
-Attendance Confirmation: Upon successful facial recognition, the attendance is marked, and the student is allowed into the class.
-
-**Contributors**
-
-Jason Price - Project Developer
+**Jason Price** – Final Year BSc. (Hons) Internet Systems Development student  
+📍 Ireland  
+🔗 [LinkedIn](https://www.linkedin.com/in/jasonpricedev/)
